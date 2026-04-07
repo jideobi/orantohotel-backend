@@ -47,6 +47,7 @@ export const createReservation = async (req, res) => {
         subject: "Reservation Confirmation - Oranto Hotel",
         name: fullName,
         booking: reservation,
+        room: roomType,
       }),
 
       // 📩 Hotel Email
