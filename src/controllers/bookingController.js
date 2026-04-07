@@ -50,7 +50,7 @@ export const createBooking = async (req, res) => {
 
       // Hotel email
       sendBookingEmail({
-        to: "reservations@orantohotel.com",
+        to: "info@orantohotel.ng",
         subject: "New Booking Received",
         name: "Hotel Admin",
         booking,
