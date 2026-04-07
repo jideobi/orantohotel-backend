@@ -20,7 +20,7 @@ export const sendBookingEmail = async ({ to, subject, name, booking, room }) => 
     htmlContent: `
       <h2>Booking Details</h2>
       <p>Name: ${booking.full_name}</p>
-      <p>Room: ${room || booking.room_type}</p>
+      <p>Room: ${room || booking.room_type || booking.room_name}</p>
       <p>phone: ${booking.phone}</p>
  <p>Check-in: ${formatDate(booking.check_in)}</p>
 <p>Check-out: ${formatDate(booking.check_out)}</p>
